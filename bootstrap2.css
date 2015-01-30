@@ -1,0 +1,47 @@
+
+
+
+h1{
+    margin: 0px;     
+    color: #428BCA;
+    padding-top: 90px;
+    font-size: 520px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+
+.item{
+    background: #428BCA;    
+    text-align: center;
+    height: 250px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+	margin: 20px;
+}
+
+#logo{
+font-family:Lobster;
+font-size: 100px;
+}
+
+#logo_footer{
+font-family: 'Shadows Into Light', cursive;
+font-size: 35px;
+overflow: hidden;
+}
+element.style {
+border-style: solid;
+border-width: 1px;
+}
+.nav-pills>li>a {
+border-style: solid;
+border-width: 1px;}
+
+.carousel{
+border-style: outset;
+}
+#formaPrecio{
+display:none;
+}

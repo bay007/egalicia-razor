@@ -1,0 +1,92 @@
+<div id="contenido" class="col-md-8">
+	<div class="row" id="rowES">
+		<div class="jumbotron">
+		  <div class="container">
+			<p>Esta sección está diseñada para que puedas saber un precio inmediatamente relacionado con tu diseño.</p>
+			<p><h5> Envíanos tu diseño y te contestamos con una cotización exacta de 8 a 36 horas.</h5></p>
+		  </div>
+		</div>
+
+
+		<div class="col-md-6">
+			<form  id="forma" role="form">
+			<div class="form-group">
+			 
+			 <div class="col-md-8 col-md-offset-3">
+			<h4> <p class="form-control-static">Ingresa los <strong>gramos</strong> de tu pieza.</p></h4>
+			 </div>
+			 </div>
+			 <div class="form-group">
+			 
+				 <div class="col-md-6 col-md-offset-3">
+				 <input type="text" id="gramos" class="form-control" >
+		 <p class="form-control-static">El precio por gramo es de 8 MX$, la densidad del material es de 0.04 lb/in<sup>3</sup>.</p>
+				</div>
+			
+			</div>	
+			</form>
+		</div>
+
+		<div class="col-md-6">
+			<form id="formaPrecio" role="form">
+			<div class="form-group">
+			 
+			 <div class="col-md-7 col-md-offset-2">
+			<h4>  <p class="form-control-static">Precio <strong>estimado</strong> de tu pieza MX$.</p></h4> 
+			 </div>
+			 </div>
+			 <div class="form-group">
+			 
+				 <div  class="col-md-6 col-md-offset-2">
+				 <input type="text" id="precio" class="form-control" min="0" readonly>
+		<p class="form-control-static">Éste precio<strong id="no"> no</strong>  incluye costo de acabado.</p>
+				</div>
+			
+			</div>	
+			</form>	
+		</div>	
+	
+	</div>
+</div>
+	<script>
+$(document).ready(function() {	
+event.preventDefault();
+	$('#rowES').addClass('animated zoomInRight');
+	 
+	 $( "#no" ).hover(function() {
+	 	$('.acabados').toggleClass('animated rubberBand');
+	 });
+	 
+	 $("#forma").submit(function(e){
+    e.preventDefault();
+  });
+  
+  $('#formaPrecio').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	  $('#no').toggleClass('animated shake');
+});
+  
+  $('#gramos').keydown(function(){
+  $('#no').removeClass('animated shake');
+  });
+	 $('#gramos').keyup(function(){
+	 var gramos=$('#gramos').val();
+	 
+	   //console.log(gramos );
+	 if (/^([0-9])*[.]?[0-9]*$/.test(gramos)){
+	 
+		var precio=Math.abs(gramos)*8;
+		$('#precio').val(precio.toFixed(2)+' Pesos');
+		$('#formaPrecio').css( "display","inherit");
+		$('#formaPrecio').addClass('animated zoomInRight');
+		$('#no').addClass('animated shake');
+		
+		
+	 }else{
+	 $('#precio').val('');
+	 $(this).val('');
+	 }
+	 
+	 
+	 });
+	 });
+	</script>

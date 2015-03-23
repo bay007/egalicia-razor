@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-  
   <head>
     <meta charset="utf-8">
     <title>
@@ -9,27 +8,22 @@
     <meta name="description" content="">
     <meta name="author" content="Ivan" >
 	 <!-- <link rel="stylesheet" href="bootstrap.min.css">-->
- <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<!-- 
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
-
-   
-
-   
-  
+	  
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	 <link rel="stylesheet" href="animate.css">
-	     <link href="bootstrap2.css" rel="stylesheet">
+	 <link href="bootstrap2.css" rel="stylesheet">
      <link href="bootstrap.min.css" rel="stylesheet">
+	 <script src="jquery.js"></script>
   </head>
-  
-  
-  
+    
   <body>
 
 
@@ -205,7 +199,7 @@ Arrachera en salsa verde
 					<span class="glyphicon glyphicon-cog pull-right"></span>Piezas Móviles
 					</a>
 				</li>
-				<li data-url="estimacion.html" >
+				<li data-url="estimacion_.html" >
 					<a class="estimacion">
 					<h3><span class="glyphicon glyphicon-shopping-cart pull-right"></span>Estimación de costos</h3>
 					</a>
@@ -310,16 +304,12 @@ Arrachera en salsa verde
             </div>
             </div>
           </div>
-          <script  src="jquery.min.js">
-          </script>
-          <script  src="bootstrap.min.js">
-          </script>
+          <script src="bootstrap.min.js"></script>
+		  
         </div>
     
     <script >$(document).ready(function() {	
-	
-	
-      $('.smooth').click(function() { var $target = $(this.hash);
+	$('.smooth').click(function() { var $target = $(this.hash);
       $target = $target.length? $target : $('[name=' + this.hash.slice(1) +']');
       if ($target.length) { 
       var targetOffset = $target.offset().top; $('html,body').animate({scrollTop:targetOffset}, 1800); return false; } });
@@ -336,7 +326,7 @@ $('#logo_footer').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
 
 	 $('.nav-pills li a').click(function(){
 		var url=$(this).parent().data().url;
-		event.preventDefault();
+		
 		$('.nav-pills li').removeClass();
 			$(this).parent().addClass("active");
 				$.get(url, function( data ) {

@@ -50,7 +50,7 @@
 </div>
 	<script>
 $(document).ready(function() {	
-event.preventDefault();
+
 	$('#rowES').addClass('animated zoomInRight');
 	 
 	 $( "#no" ).hover(function() {
@@ -58,7 +58,7 @@ event.preventDefault();
 	 });
 	 
 	 $("#forma").submit(function(e){
-    e.preventDefault();
+    
   });
   
   $('#formaPrecio').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -74,7 +74,7 @@ event.preventDefault();
 	   //console.log(gramos );
 	 if (/^([0-9])*[.]?[0-9]*$/.test(gramos)){
 	 
-		var precio=Math.abs(gramos)*8;
+		var precio=Math.round((30*Math.exp(-0.15*Math.abs(gramos))+6)*Math.abs(gramos));
 		$('#precio').val(precio.toFixed(2)+' Pesos');
 		$('#formaPrecio').css( "display","inherit");
 		$('#formaPrecio').addClass('animated zoomInRight');

@@ -44,7 +44,7 @@
 <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title center-block">
-Diseño
+Diseño<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </h3>
         </div>
         <div class="panel-body">
@@ -201,14 +201,11 @@ Diseño
           </h3>
         </div>
         <div class="panel-body">
-          En:
-          <br>
-          <br>
-          <div class="row-fluid">
+          <div class="row">
             
             <div class="col-md-9 panel panel-primary">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3762.482836274027!2d-99.1360406!3d19.434738700000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92d3fd92f49%3A0x18bec775a23cf871!2sIsabel+la+Cat%C3%B3lica+10%2C+Centro%2C+06600+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses!2smx!4v1408430919312"
-              style="border:0" frameborder="0" height="350" width="100%">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3760.79237380376!2d-99.12402560000001!3d19.507566599999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9c1d2d4e1d7%3A0xe28121766464b7a3!2sS%C3%A3o+Paulo+2%2C+San+Pedro+Zacatenco%2C+Gustavo+A.+Madero%2C+07360+Cd+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses!2smx!4v1428824816001"
+              style="border:0" frameborder="0" height="450" width="100%">
               </iframe>
             </div>
             <div class="col-md-3">
@@ -216,19 +213,22 @@ Diseño
                 Razor<h5>Robot Design</h5>
               </h2>
               <address>
-                <strong>AV IPN</strong>
+                <strong>São Paulo 2</strong>
                 <br>
-                15 DF, Colonia Centro
+                San Pedro Zacatenco, 
                 <br>
-                Segundo piso
-                <br>
-                Mexico
-                <br>
-                <abbr title="Teléfono">
-                  Tel:
-                </abbr>
-                55 91 42 09 28
-              </address>
+                Gustavo A. Madero, 07360 Cd de México, D.F.
+				</address>
+				<hr>
+				Cotización exacta:
+				cotizacion@razorrobotdesign.com
+				<hr>
+                Ramon Lopez: 55 91 42 09 28
+				ramon@razorrobotdesign.com
+				<hr>
+				Manny Santos : 55 43 53 46 16
+				manny@razorrobotdesign.com
+              
             </div>
             </div>
             </div>
@@ -238,13 +238,14 @@ Diseño
         </div>
     
     <script >$(document).ready(function() {	
+
 	$('.smooth').click(function() { var $target = $(this.hash);
       $target = $target.length? $target : $('[name=' + this.hash.slice(1) +']');
       if ($target.length) { 
       var targetOffset = $target.offset().top; $('html,body').animate({scrollTop:targetOffset}, 1800); return false; } });
 	 
 $('#logo_footer').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-	  $.get('inicio.html', function( data ) {
+	  $.get('inicio.php', function( data ) {
 					$( "#contenido" ).replaceWith( data );
 				});
 });		 

@@ -7,7 +7,7 @@ echo '<div id="contenido" class="col-md-8">
 			<div class="jumbotron">
 			  <div class="container">
 				<p>La apariencia de tu proyecto tambien importa, es por ello que te ofrecemos presentarlo en diversos colores y acabados, desde eliminar las líneas de impresion hatsa darle textura y color de tu preferencia.</p>
-				<p><h5> Existe un costo por éste servicio en proporción a la dificultad del mismo y el núumero de piezas.</h5></p>
+				<p><h5> Existe un costo por éste servicio en proporción a la dificultad del mismo y el número de piezas.</h5></p>
 			  </div>
 			</div>
 		</div>

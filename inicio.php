@@ -3,12 +3,12 @@ include("config.php");
 $img = new Imagenes;
 echo '<div id="contenido" class="col-md-8">';
 	echo '<div class="row" id="row1">';
-			$img->obtenerImagenes("inicio/1/");
-			$img->obtenerImagenes("inicio/2/");
+			$img->obtenerImagenes("galeria/inicio/1/");
+			$img->obtenerImagenes("galeria/inicio/2/");
 	echo '</div>';	
 		echo '<div class="row" id="row2">';
-			$img->obtenerImagenes("inicio/3/");
-			$img->obtenerImagenes("inicio/4/");
+			$img->obtenerImagenes("galeria/inicio/3/");
+			$img->obtenerImagenes("galeria/inicio/4/");
 	echo '</div>';	
 echo '</div>';	
 	

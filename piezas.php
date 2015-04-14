@@ -12,7 +12,7 @@ echo '<div id="contenido" class="col-md-8">
 			</div>
 		</div>';
 
-		$img->obtenerImagenes("piezas/1/",5);
+		$img->obtenerImagenes("galeria/piezas/1/",5);
 
 echo '</div>
 </div>

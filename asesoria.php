@@ -12,8 +12,8 @@ echo '<div id="contenido" class="col-md-8">
 
 		<div class="row" id="row1">';
 		
-			$img->obtenerImagenes("asesoria/1/");
-			$img->obtenerImagenes("asesoria/2/");
+			$img->obtenerImagenes("galeria/asesoria/1/");
+			$img->obtenerImagenes("galeria/asesoria/2/");
 		
 echo	'</div>
 

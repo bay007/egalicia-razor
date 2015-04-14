@@ -11,13 +11,13 @@ echo '<div id="contenido" class="col-md-8">
 		  </div>
 		</div>
 		<div class="row" id="row2">';
-$img->obtenerImagenes("impresion/1/");
-$img->obtenerImagenes("impresion/2/");		
+$img->obtenerImagenes("galeria/impresion/1/");
+$img->obtenerImagenes("galeria/impresion/2/");		
 echo		'</div>';
 echo		'<div class="row" id="row1">';
-$img->obtenerImagenes("impresion/3/",4);
-$img->obtenerImagenes("impresion/4/",4);
-$img->obtenerImagenes("impresion/5/",4);			
+$img->obtenerImagenes("galeria/impresion/3/",4);
+$img->obtenerImagenes("galeria/impresion/4/",4);
+$img->obtenerImagenes("galeria/impresion/5/",4);			
 			
 echo	'</div>
 	</div>

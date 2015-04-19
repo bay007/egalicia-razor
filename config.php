@@ -14,7 +14,7 @@ $header='<div class="col-md-{col}">
 			  <div class="carousel-inner">';
 	echo str_replace("{col}",$col,str_replace("{0}",$num,$header));				  
 		//$dirname = "inicio/1/";
-		$images = glob($dirname."*.jpg");
+		$images = glob($dirname."*.*");
 		$k=0;
 		foreach($images as $image) {
 		if($k==0) echo '<div class="item active">';
@@ -40,7 +40,7 @@ $footer='</div>
 	function obtenerImagenesBoton($dirname) {
 		//$dirname = "inicio/1/";
 		$s="";
-		$images = glob($dirname."*.jpg");
+		$images = glob($dirname."*.*");
 		foreach($images as $image) {
 		$s=$s.'{src:"'.$image.'"},';
 		}
